@@ -1,0 +1,68 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    background-color: #f2f2f2;
+  }
+  
+  .tela-inicial, .explosao {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-size: 3em;
+    font-weight: bold;
+    transition: opacity 2s ease-out;
+  }
+  
+  .tela-inicial.sair {
+    opacity: 0;
+  }
+  
+  .conteudo {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+  }
+  
+  #botao {
+    padding: 15px 30px;
+    font-size: 1.2em;
+    cursor: pointer;
+    transition: all 0.5s ease;
+  }
+  
+  .mensagem-area {
+    margin-top: 20px;
+  }
+  
+  #mensagem {
+    font-size: 18px;
+    transition: font-size 0.3s ease;
+  }
+  
+  .top-left    { position: absolute; top: 10px; left: 10px; }
+  .top-right   { position: absolute; top: 10px; right: 10px; }
+  .bottom-left { position: absolute; bottom: 10px; left: 10px; }
+  .bottom-right{ position: absolute; bottom: 10px; right: 10px; }
+  
+  .explosao {
+    display: none;
+    background-color: red;
+    color: white;
+  }
+  
+  .boom {
+    animation: shake 0.5s infinite;
+  }
+  
+  @keyframes shake {
+    0% { transform: translate(1px, 1px) rotate(0deg); }
+    25% { transform: translate(-1px, 2px) rotate(-1deg); }
+    50% { transform: translate(-3px, 1px) rotate(1deg); }
+    75% { transform: translate(2px, 1px) rotate(1deg); }
+    100% { transform: translate(1px, -1px) rotate(-1deg); }
+  }
+  
