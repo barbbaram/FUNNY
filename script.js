@@ -9,7 +9,7 @@ const mensagens = [
   "Tô de cara! Que ousadia!",
   "Você me respeite!",
   "Tá achando que é quem?",
-  "eu vou explodir se vc me apertar mais uma vez"
+  "eu vou explodir se vc me apertar mais uma vez!"
 ];
 
 let cliques = 0;
